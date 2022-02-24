@@ -5,13 +5,13 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Create Next App - </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className="title">
-          This is Testing {' '}
+          This is DEV enviornment {' '}
           To view posts <Link href={"/posts"}>Posts Page</Link>
         </h1>
 
