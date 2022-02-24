@@ -26,7 +26,7 @@ export default function Home({ env }) {
         </h1>
 
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          These changes are only available in {env}
         </p>
 
         <div className="grid">
