@@ -1,7 +1,17 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
-export default function Home() {
+export async function getStaticProps() {
+  const env = process.env.ENV_NAME;
+  return {
+    props: {
+      env
+    }
+  }
+
+}
+
+export default function Home({ env }) {
   return (
     <div className="container">
       <Head>
@@ -11,7 +21,7 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          This is DEV enviornment {' '}
+          This is {env} enviornment {' '}
           To view posts <Link href={"/posts"}>Posts Page</Link>
         </h1>
 
